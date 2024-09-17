@@ -1,0 +1,19 @@
+{
+  "name": "cybersmart-group-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/style.scss public/style.css",
+    "watch:css": "sass --watch src/style.scss:public/style.css",
+    "build": "npm run build:css",
+    "start": "npm run build && live-server public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.78.0"
+  }
+}
