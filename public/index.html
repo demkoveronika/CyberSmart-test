@@ -3,11 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello world</h1>
+  <header class="header">
+    <div class="header__top">
+      <img class="header__top-logo" src="images/logo.svg" alt="logo">
+      <nav class="header__top-menu">
+        <ul class="header__top-list">
+          <li class="header__top-item">About us</li>
+          <li class="header__top-item">Features</li>
+          <li class="header__top-item">Blog</li>
+          <li class="header__top-item">Contact</li>
+          <button class="header__top-button">Download App</button>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="header__bottom">
+      <div class="header__bottom-text">
+        <h1 class="header__bottom-title">
+          Introducing <span class="header__bottom-title-span">Abstract</span>
+          <br>
+          App landing page
+        </h1>
+        <p class="header__bottom-desc">
+          A perfect landing page to showcase
+          <br>
+          your new App
+        </p>
+      </div>
+      <div class="header__bottom-img">
+        <img src="images/main-illustration.svg" alt="phone">
+      </div>
+    </div>
+  </header>
+
+  <article class="background">
+    <img class="background-lines" src="images/vector-2.svg" alt="vector-2">
+  </article>
+
+  <main>
+    <section class="features">
+      <ul class="features__list">
+        <li class="features__item">
+          <img class="features__item-img" src="images/pencil.svg" alt="pencil">
+          <h3 class="features__item-title">Modern & Trendy Design</h2>
+          <p class="features__item-desc">Dictas scaevola democritum cu his, magna abhorreant dissentias ut</p>
+          <button class="features__item-button">
+            <h4 class="features__item-button-text">Learn More</h4>
+            <img class="features__item-button-img" src="images/arrow-purple.svg" alt="arrow">
+          </button>
+        </li>
+        <li class="features__item">
+          <img class="features__item-img" src="images/time.svg" alt="time">
+          <h3 class="features__item-title">Save your Time</h2>
+          <p class="features__item-desc">
+            oportere patrioque sit et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.
+          </p>
+          <button class="features__item-button">
+            <h4 class="features__item-button-text">Learn More</h4>
+            <img class="features__item-button-img" src="images/arrow-purple.svg" alt="arrow">
+          </button>
+        </li>
+        <li class="features__item">
+          <img class="features__item-img" src="images/heart.svg" alt="heart">
+          <h3 class="features__item-title">Made with Love</h2>
+          <p class="features__item-desc">Inimicus hendrerit an duo, feugiat adipiscing everti nostrum id.</p>
+          <button class="features__item-button">
+            <h4 class="features__item-button-text">Learn More</h4>
+            <img class="features__item-button-img" src="images/arrow-purple.svg" alt="arrow">
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="information">
+      <div class="information-design">
+        <div class="information-design-right">
+          <h1 class="information-design-right__title">Modern & <br> Trendy Design</h1>
+          <p class="information-design-right__desc">Dictas scaevola democritum cu his, magna abhorrent dissentias utDictas scaevola democritum cu his.</p>
+          <button class="information-design-right__button">
+            <h4 class="information-design-right__button-text">Learn More</h4>
+            <img class="information-design-right__button-img" src="images/arrow-purple.svg" alt="arrow">
+          </button>
+        </div>
+        <div class="information-design-left">
+          <img class="information-design-left__ellipse" src="images/ellipse.svg" alt="ellipse">
+          <div class="information-design-left__images">
+            <img class="information-design-left__images-one" src="images/citygroup.svg" alt="citygroup">
+            <img class="information-design-left__images-two" src="images/stats.svg" alt="stats">
+          </div>
+        </div>
+      </div>
+      <div class="information-time">
+        <img class="information-time__left" src="images/phone-save-time.svg" alt="phone">
+        <div class="information-time__right">
+          <h1 class="information-time__right-title">Save <br> your time</h1>
+          <p class="information-time__right-desc">Dictas scaevola democritum cu his, magna abhorrent dissentias utDictas scaevola democritum cu his.</p>
+          <button class="information-time__right-button">
+            <h4 class="information-time__right-button-text">Download App</h4>
+            <img class="information-time__right-button-img" src="images/arrow-white.svg" alt="arrow">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__top">
+        <h1 class="reviews__top-title">What 400+ reviews <br> say about us</h1>
+        <div class="reviews__top-images">
+          <button class="reviews__top-images-button">
+            <img src="images/arrow-left.svg" alt="left">
+          </button>
+          <button class="reviews__top-images-button">
+            <img src="images/arrow-right.svg" alt="right">
+          </button>
+        </div>
+      </div>
+      <div class="reviews__bottom">
+        <div class="reviews__bottom-review"></div>
+      </div>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
