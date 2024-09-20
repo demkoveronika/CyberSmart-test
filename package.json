@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass src/style.scss public/style.css",
+    "build:css": "sass ./src/style.scss ./public/style.css",
     "watch:css": "sass --watch src/style.scss:public/style.css",
     "build": "npm run build:css",
     "start": "npm run build && live-server public"
