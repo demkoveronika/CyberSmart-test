@@ -12,19 +12,52 @@
 <body>
   <header class="header">
     <div class="header__top">
-      <img class="header__top-logo" src="images/logo.svg" alt="logo">
+      <a href="/">
+        <img class="header__top-logo" src="images/logo.svg" alt="logo">
+      </a>
       <nav class="header__top-menu">
         <ul class="header__top-list">
-          <li class="header__top-item">About us</li>
-          <li class="header__top-item">Features</li>
-          <li class="header__top-item">Blog</li>
-          <li class="header__top-item">Contact</li>
-          <button class="header__top-button">Download App</button>
+          <li >
+            <a class="header__top-item" href="#about">About us</a>
+          </li>
+          <li>
+            <a class="header__top-item"  href="#features">Features</a>
+          </li>
+          <li>
+            <a class="header__top-item" href="#blog">Blog</a>
+          </li>
+          <li>
+            <a class="header__top-item" href="#contact">Contact</a>
+          </li>
         </ul>
+        <a class="header__top-phone" href="#menu">Menu</a>
+        <button class="header__top-button">Download App</button>
       </nav>
     </div>
+
+    <aside class="page__menu" id="menu">
+      <ul class="page__menu-list">
+        <li >
+          <a class="page__menu-item" href="#about">About us</a>
+        </li>
+        <li>
+          <a class="page__menu-item"  href="#features">Features</a>
+        </li>
+        <li>
+          <a class="page__menu-item" href="#blog">Blog</a>
+        </li>
+        <li>
+          <a class="page__menu-item" href="#contact">Contact</a>
+        </li>
+        <li>
+          <a class="page__menu-close" href="#">
+            <img class="page__menu-close--icon" src="images/icon-close.svg" alt="close">
+          </a>
+        </li>
+      </ul>
+    </aside>
     
-    <div class="header__bottom">
+    <div class="header__bottom" id="about">
       <div class="header__bottom-text">
         <h1 class="header__bottom-title">
           Introducing <span class="header__bottom-title-span">Abstract</span>
@@ -43,7 +76,7 @@
     </div>
   </header>
 
-  <article class="background">
+  <article id="features" class="background">
     <img class="background-lines" src="images/vector-2.svg" alt="vector-2">
   </article>
 
@@ -54,10 +87,10 @@
           <img class="features__item-img" src="images/pencil.svg" alt="pencil">
           <h3 class="features__item-title">Modern & Trendy Design</h2>
           <p class="features__item-desc">Dictas scaevola democritum cu his, magna abhorreant dissentias ut</p>
-          <button class="features__item-button">
-            <h4 class="features__item-button-text">Learn More</h4>
-            <img class="features__item-button-img" src="images/arrow-purple.svg" alt="arrow">
-          </button>
+          <a href="#design" class="features__item-link">
+            <h4 class="features__item-link-text">Learn More</h4>
+            <img class="features__item-link-img" src="images/arrow-purple.svg" alt="arrow">
+          </a>
         </li>
         <li class="features__item">
           <img class="features__item-img" src="images/time.svg" alt="time">
@@ -65,25 +98,25 @@
           <p class="features__item-desc">
             oportere patrioque sit et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.
           </p>
-          <button class="features__item-button">
-            <h4 class="features__item-button-text">Learn More</h4>
-            <img class="features__item-button-img" src="images/arrow-purple.svg" alt="arrow">
-          </button>
+          <a href="#time" class="features__item-link">
+            <h4 class="features__item-link-text">Learn More</h4>
+            <img class="features__item-link-img" src="images/arrow-purple.svg" alt="arrow">
+          </a>
         </li>
         <li class="features__item">
           <img class="features__item-img" src="images/heart.svg" alt="heart">
           <h3 class="features__item-title">Made with Love</h2>
           <p class="features__item-desc">Inimicus hendrerit an duo, feugiat adipiscing everti nostrum id.</p>
-          <button class="features__item-button">
-            <h4 class="features__item-button-text">Learn More</h4>
-            <img class="features__item-button-img" src="images/arrow-purple.svg" alt="arrow">
-          </button>
+          <a href="#reviews" class="features__item-link">
+            <h4 class="features__item-link-text">Learn More</h4>
+            <img class="features__item-link-img" src="images/arrow-purple.svg" alt="arrow">
+          </a>
         </li>
       </ul>
     </section>
 
-    <section class="information">
-      <div class="information-design">
+    <section class="information" id="blog">
+      <div class="information-design" id="design">
         <div class="information-design-right">
           <h1 class="information-design-right__title">Modern & <br> Trendy Design</h1>
           <p class="information-design-right__desc">Dictas scaevola democritum cu his, magna abhorrent dissentias utDictas scaevola democritum cu his.</p>
@@ -99,8 +132,9 @@
             <img class="information-design-left__images-two" src="images/stats.svg" alt="stats">
           </div>
         </div>
+        <img class="information-design-phone" src="images/design-phone.svg" alt="design">
       </div>
-      <div class="information-time">
+      <div class="information-time" id="time">
         <img class="information-time__left" src="images/phone-save-time.svg" alt="phone">
         <div class="information-time__right">
           <h1 class="information-time__right-title">Save <br> your time</h1>
@@ -113,15 +147,15 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews__top">
         <h1 class="reviews__top-title">What 400+ reviews <br> say about us</h1>
         <div class="reviews__top-images">
           <button class="reviews__top-images-button">
-            <img src="images/arrow-left.svg" alt="left">
+            <img src="images/arrow-left.svg" id="prev" alt="left">
           </button>
           <button class="reviews__top-images-button">
-            <img src="images/arrow-right.svg" alt="right">
+            <img src="images/arrow-right.svg" id="next" alt="right">
           </button>
         </div>
       </div>
@@ -166,7 +200,7 @@
       </div>
     </section>
     
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="pricing__top">
         <h1 class="pricing__top-title">Pricing</h1>
         <p class="pricing__top-desc">Dictas scaevola democritum cu his, magna abhorreant dissentias utDictas scaevola democritum cu his.</p>
@@ -215,9 +249,11 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer__badges">
-        <img class="footer__badges-logo" src="images/logo-footer.svg" alt="logo">
+        <a href="/">
+          <img class="footer__badges-logo" src="images/logo-footer.svg" alt="logo">
+        </a>
         <ul class="footer__badges-list">
           <li class="footer__badges-item">
             <img class="footer__badges-item--badge" src="images/play.svg" alt="play">
@@ -226,17 +262,16 @@
             <img class="footer__badges-item--badge" src="images/app-store.svg" alt="app-store">
           </li>
         </ul>
-        <p class="footer__badges-text">2018 © Copyrights, All rights reserved.</p>
       </div>
       <div class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
             <h3 class="footer__menu-item--title">About us</h3>
             <ul class="footer__menu-item--list">
-              <li class="footer__menu-item--list-text">Home</li>
-              <li class="footer__menu-item--list-text">Features</li>
-              <li class="footer__menu-item--list-text">Docs</li>
-              <li class="footer__menu-item--list-text">Pricing</li>
+              <a class="footer__menu-item--list-text" href="/">Home</a>
+              <a class="footer__menu-item--list-text" href="#features">Features</a>
+              <a class="footer__menu-item--list-text" href="#blog">Docs</a>
+              <a class="footer__menu-item--list-text" href="#pricing">Pricing</a>
             </ul>
           </li>
           <li class="footer__menu-item">
@@ -265,6 +300,10 @@
         <img class="footer__language-arrow" src="images/arrow-bottom.svg" alt="arrow">
       </div>
     </footer>
+  
+    <div class="copyright">
+      <p class="copyright__text">2018 © Copyrights, All rights reserved.</p>
+    </div>
   </main>
 
   <script src="script.js"></script>
