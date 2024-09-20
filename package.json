@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "live-server": "^1.2.2",
     "sass": "^1.78.0"
-  }
+  },
+  "devDependencies": {}
 }
